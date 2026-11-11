@@ -1,0 +1,19 @@
+[
+  {
+    "day": 1,
+    "title": "A support ticket, by hand",
+    "topics": [
+      "python.basics.values",
+      "python.basics.strings",
+      "python.basics.conditionals",
+      "python.basics.mutation"
+    ],
+    "assigned": "2026-11-11",
+    "status": "assigned",
+    "completed": null,
+    "minutes": null,
+    "assistance": null,
+    "score": null,
+    "misconceptions": []
+  }
+]

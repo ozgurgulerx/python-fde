@@ -1,0 +1,10 @@
+[
+  {
+    "id": "sample-values",
+    "topic": "python.basics.values",
+    "mode": "unaided_concept_check",
+    "prompt": "What does `total = price * quantity` store in total when price is 12 and quantity is 3?",
+    "variants": ["rebinding a name"],
+    "provenance": "sample_for_tests"
+  }
+]

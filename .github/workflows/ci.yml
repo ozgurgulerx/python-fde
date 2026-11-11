@@ -1,0 +1,49 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  coach:
+    name: Coach and tools
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - run: python -m pip install --quiet coverage
+      - name: Coach tests with coverage
+        working-directory: coach
+        run: |
+          coverage run --source=scripts --omit='scripts/install*.py,scripts/research.py' -m unittest discover -s tests
+          coverage report --fail-under=80
+      - name: Tool tests
+        run: python -m unittest discover -s tests
+
+  days:
+    name: Day assignments
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - name: Run every day
+        run: |
+          status=0
+          for day in days/day*/; do
+            echo "::group::${day}"
+            python -m unittest discover -s "${day}" -v || status=1
+            echo "::endgroup::"
+          done
+          exit "${status}"

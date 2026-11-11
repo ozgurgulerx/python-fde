@@ -1,0 +1,17 @@
+# Private coach references: personal context and third-party interview material
+coach/references/context.json
+coach/references/question-bank.json
+coach/references/interview-sources.json
+coach/references/private-notes.md
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+.coverage
+htmlcov/
+
+# macOS and editors
+.DS_Store
+.idea/
+.vscode/

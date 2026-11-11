@@ -1,0 +1,34 @@
+{
+  "version": 1,
+  "course_started": "2026-11-11",
+  "totals": {
+    "lessons_sent": 1,
+    "questions_asked": 1,
+    "questions_answered": 0,
+    "scored_attempts": 0,
+    "days_assigned": 1,
+    "days_reviewed": 0
+  },
+  "topics": {},
+  "introduced": [
+    "python.basics.values"
+  ],
+  "misconceptions": [],
+  "engagement": {
+    "by_kind": {
+      "unaided_concept_check": {
+        "sent": 1,
+        "asked": 1,
+        "answered": 0,
+        "reply_rate": 0.0
+      }
+    },
+    "by_hour": {
+      "09": {
+        "asked": 1,
+        "answered": 0
+      }
+    },
+    "unanswered_streak": 1
+  }
+}

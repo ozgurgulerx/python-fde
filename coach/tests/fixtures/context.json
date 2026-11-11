@@ -1,0 +1,10 @@
+{
+  "checked_at": "2026-11-11",
+  "learner": "Sample learner",
+  "target": "Sample context for tests. The real file is private; see references/README.md.",
+  "curriculum": ["values and names", "strings", "conditionals", "loops", "collections", "functions"],
+  "learning_rules": ["Start with basics and move up only on evidence."],
+  "resources": [
+    {"title": "The Python Tutorial", "url": "https://docs.python.org/3/tutorial/", "tags": ["python.basics"], "checked_at": "2026-11-11"}
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "title": "Python from scratch · 01 — Values and names",
+  "topic": "python.basics.values",
+  "kind": "unaided_concept_check",
+  "lesson": "We are starting a fresh Python course. Earlier emails remain in your archive and do not count as progress in this course.\n\nPython works with values. 3 is an integer, 2.5 is a floating-point number, and \"hello\" is text (a string). An assignment gives a name to a value:\n\n```python\nprice = 12\nquantity = 3\ntotal = price * quantity\nprint(total)\n```\n\nHere, * multiplies two numbers, so print(total) displays 36. The = sign assigns a value; it does not ask whether two things are equal. Code runs from top to bottom.\n\nSpend about three minutes on the question below. Try to reason without running it first; if you use Python or AI, say so. We will build gradually toward functions, collections, JSON and APIs.",
+  "question": "What does this print, and why?\n\n```python\napples = 4\nmore = 2\napples = apples + more\nprint(apples)\n```\n\nReply with the output and one sentence explaining the second assignment to apples.",
+  "resources": []
+}
